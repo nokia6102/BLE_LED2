@@ -247,7 +247,7 @@ final class BluetoothSerial: NSObject, CBCentralManagerDelegate, CBPeripheralDel
     {
         guard isReady else { return }
         
-        connectedPeripheral!.writeValue(data, for: writeCharacteristic!, type: CBCharacteristicWriteType.withResponse)
+        connectedPeripheral!.writeValue(data, for: writeCharacteristic!, type: CBCharacteristicWriteType.withoutResponse)
     }
     
     ///將數據發送到設備

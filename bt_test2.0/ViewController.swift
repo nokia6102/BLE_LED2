@@ -3,7 +3,6 @@
 //  bt_test2.0
 //
 //  Created  on 2017/9/11.
-//  Copyright © 2017年 Albert. All rights reserved.
 //
 
 import UIKit
@@ -58,8 +57,11 @@ var martixColor = [[Int]](repeating: [Int](repeating: 0, count: 16), count: 16)
     var totalLine = [UInt8]()
     
 //MARK: IBActions
+    
+    
     @IBAction func btnAutomaticallyFlared(_ sender: UIButton)
     {
+        
         
         let uiText = myText.text
         
@@ -112,7 +114,9 @@ var martixColor = [[Int]](repeating: [Int](repeating: 0, count: 16), count: 16)
         print (emptyNSdata)
         print ("-:")
         
+       
         serial.addDataToDevice( emptyNSdata as Data )
+ 
     }
     
   }
