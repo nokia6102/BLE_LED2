@@ -223,7 +223,6 @@ var martixColor = [[Int]](repeating: [Int](repeating: 0, count: 16), count: 16)
     func showText ()
     {
         let sText =  myText.text
-        let sLen =  10
         let myView  = ShapeView(frame:CGRect(x:25,y:200,width:320,height:16),text: sText!)
         myView.backgroundColor = UIColor.white
         view.addSubview(myView)
