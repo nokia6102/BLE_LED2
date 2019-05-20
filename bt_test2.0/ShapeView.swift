@@ -64,14 +64,17 @@ class ShapeView: UIView {
         let str = self.currentText
      //   let len = self.currentText.lengthOfBytes(using: .utf8)
         
-        let rect = CGRect(origin: CGPoint(x: 0,y :0), size: CGSize(width: 16, height: 18))      //swift 4
-        let font = UIFont.systemFont(ofSize: 16
-        )            //Fix to swift 4
+        let rect = CGRect(origin: CGPoint(x: -1,y :-3), size: CGSize(width: 20, height: 20))      //swift 4
+//        let font = UIFont.systemFont(ofSize: 16)
+        var fw  = UIFont.Weight.regular
+//        var fw  = UIFont.Weight.bold
+        let font = UIFont.systemFont(ofSize: 18, weight: fw)
         
         let color = UIColor.black
         let style = NSMutableParagraphStyle()
         
-        style.alignment = NSTextAlignment.left
+        style.alignment = NSTextAlignment.justified
+        
         (str as NSString).draw(in: rect, withAttributes: [NSAttributedString.Key.font:font,NSAttributedString.Key.foregroundColor:color,NSAttributedString.Key.paragraphStyle:style])
     }
     

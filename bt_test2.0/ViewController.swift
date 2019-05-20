@@ -229,11 +229,6 @@ var martixColor = [[Int]](repeating: [Int](repeating: 0, count: 16), count: 16)
         
         var myColor : Float
         
-        // var martixColor = [[Int]]()
-        
-        
-        
-        
         for i in 0..<320
         {
             for j in 0..<16
