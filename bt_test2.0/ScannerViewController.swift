@@ -101,8 +101,8 @@ class ScannerViewController: UIViewController,UITableViewDataSource, UITableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // return a cell with the peripheral name as text in the label
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
-        let label = cell.viewWithTag(1) as! UILabel!
-        label?.text = peripherals[(indexPath as NSIndexPath).row].peripheral.name
+        let label = cell.viewWithTag(1) as! UILabel
+        label.text = peripherals[(indexPath as NSIndexPath).row].peripheral.name
         return cell
     }
     

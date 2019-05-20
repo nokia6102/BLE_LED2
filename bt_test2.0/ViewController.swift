@@ -84,27 +84,27 @@ var martixColor = [[Int]](repeating: [Int](repeating: 0, count: 16), count: 16)
           //   }
       //  var sendString0 = "SetMsg="
          
-   var sendString0 = (x == 0 ? "SetMsg=" : "AddMsg=")
-      var newData0 = sendString0.data(using: String.Encoding.utf8)
+            let sendString0 = (x == 0 ? "SetMsg=" : "AddMsg=")
+            let newData0 = sendString0.data(using: String.Encoding.utf8)
 
      //   var c0 = newData0
-        var size : UInt8 = 2
-        var dataArray :UInt8 = UInt8(totalLine.count)
-        var total:Int16 = Int16(size + dataArray)
-        var highByte:UInt8 = UInt8(total >> 8)
+            let size : UInt8 = 2
+            let dataArray :UInt8 = UInt8(totalLine.count)
+            let total:Int16 = Int16(size + dataArray)
+            let highByte:UInt8 = UInt8(total >> 8)
         let lowByte:UInt8 = UInt8(total & 0xff)
         
-        var emptyNSdata = NSMutableData()
+            let emptyNSdata = NSMutableData()
         
         //key command
         emptyNSdata.append(newData0!)
         
-        var endMarker = NSData(bytes: [UInt8(highByte), lowByte] , length: 2)
+            let endMarker = NSData(bytes: [UInt8(highByte), lowByte] , length: 2)
         
         emptyNSdata.append(endMarker as Data)
         
 //        var dataBytes = NSData(bytes: line, length:  32)
-          var dataBytes = NSData(bytes: totalLine, length:  totalLine.count)
+            let dataBytes = NSData(bytes: totalLine, length:  totalLine.count)
 
         emptyNSdata.append(dataBytes as Data)
         

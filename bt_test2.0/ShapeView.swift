@@ -72,7 +72,7 @@ class ShapeView: UIView {
         let style = NSMutableParagraphStyle()
         
         style.alignment = NSTextAlignment.left
-        (str as NSString).draw(in: rect, withAttributes: [NSAttributedStringKey.font:font,NSAttributedStringKey.foregroundColor:color,NSAttributedStringKey.paragraphStyle:style])
+        (str as NSString).draw(in: rect, withAttributes: [NSAttributedString.Key.font:font,NSAttributedString.Key.foregroundColor:color,NSAttributedString.Key.paragraphStyle:style])
     }
     
 
