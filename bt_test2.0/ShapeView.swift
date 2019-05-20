@@ -66,7 +66,7 @@ class ShapeView: UIView {
         
         let rect = CGRect(origin: CGPoint(x: -1,y :-3), size: CGSize(width: 20, height: 20))      //swift 4
 //        let font = UIFont.systemFont(ofSize: 16)
-        var fw  = UIFont.Weight.regular
+        let fw  = UIFont.Weight.regular
 //        var fw  = UIFont.Weight.bold
         let font = UIFont.systemFont(ofSize: 18, weight: fw)
         
